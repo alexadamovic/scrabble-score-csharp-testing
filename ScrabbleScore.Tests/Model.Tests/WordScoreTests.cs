@@ -9,7 +9,8 @@ namespace ScrabbleScore.Tests
     [TestMethod]
     public void WordScoreConstructor_CreatesInstanceOfWordScore_WordScore()
     {
-      WordScore newWordScore = new WordScore();
+      string test = "test";
+      WordScore newWordScore = new WordScore(test);
       Assert.AreEqual(typeof(WordScore), newWordScore.GetType());
     }
 
