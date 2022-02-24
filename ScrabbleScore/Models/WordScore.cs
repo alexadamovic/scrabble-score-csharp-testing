@@ -15,14 +15,22 @@ namespace ScrabbleScore.Models
 
     public int GetScore()
     {
-      if (this.Word == "A")
+      char[] wordArray = Word.ToCharArray();
+      int counter = 0;
+      foreach (char letter in wordArray)
       {
-        return 1;
+        System.Console.WriteLine(letter);
+        if (letter == 'A')
+        {
+          counter += 1;
+        }
+        else
+        {
+          counter += 0;
+        }
       }
-      else
-      {
-        return 0;
-      }
+      System.Console.WriteLine(counter);
+      return counter;
     }
   }
 }
