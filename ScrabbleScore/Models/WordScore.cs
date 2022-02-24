@@ -28,6 +28,10 @@ namespace ScrabbleScore.Models
         {
           counter += 2;
         }
+        else if (letter == 'B' || letter == 'C' || letter == 'M' || letter == 'P')
+        {
+          counter += 3;
+        }
         else
         {
           counter += 0;
