@@ -44,6 +44,10 @@ namespace ScrabbleScore.Models
         {
           counter += 8;
         }
+        else if (letter == 'Q' || letter == 'Z')
+        {
+          counter += 10;
+        }
         else
         {
           counter += 0;

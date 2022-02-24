@@ -115,6 +115,13 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(10, result);
     }
 
+    public void GetScore_Return10ForWord_Int()
+    {
+      string test = "KK";
+      WordScore newWordScore = new WordScore(test);
+      int result = newWordScore.GetScore();
+      Assert.AreEqual(10, result);
+    }
 
 
   }
