@@ -15,7 +15,14 @@ namespace ScrabbleScore.Models
 
     public int GetScore()
     {
-      return 1;
+      if (this.Word == "A")
+      {
+        return 1;
+      }
+      else
+      {
+        return 0;
+      }
     }
   }
 }

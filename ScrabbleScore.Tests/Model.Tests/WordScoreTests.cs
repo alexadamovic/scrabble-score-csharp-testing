@@ -37,7 +37,7 @@ namespace ScrabbleScore.Tests
     [TestMethod]
     public void GetScore_ReturnInt_Int()
     {
-      string test = "test";
+      string test = "A";
       WordScore newWordScore = new WordScore(test);
       int result = newWordScore.GetScore();
       Assert.AreEqual(1, result);
