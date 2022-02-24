@@ -40,6 +40,10 @@ namespace ScrabbleScore.Models
         {
           counter += 5;
         }
+        else if (letter == 'J' || letter == 'X')
+        {
+          counter += 8;
+        }
         else
         {
           counter += 0;
