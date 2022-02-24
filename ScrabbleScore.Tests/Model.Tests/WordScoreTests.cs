@@ -97,6 +97,15 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(5, result);
     }
 
+    [TestMethod]
+    public void GetScore_Return8For1Letter_Int()
+    {
+      string test = "J";
+      WordScore newWordScore = new WordScore(test);
+      int result = newWordScore.GetScore();
+      Assert.AreEqual(8, result);
+    }
+
 
   }
 }
