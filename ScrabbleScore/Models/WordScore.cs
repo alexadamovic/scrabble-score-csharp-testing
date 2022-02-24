@@ -15,7 +15,7 @@ namespace ScrabbleScore.Models
 
     public int GetScore()
     {
-      // return 1;
+      return 1;
     }
   }
 }
