@@ -88,7 +88,7 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(4, result);
     }
 
-  [TestMethod]
+    [TestMethod]
     public void GetScore_Return5For1Letter_Int()
     {
       string test = "K";
@@ -115,6 +115,7 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(10, result);
     }
 
+  [TestMethod]
     public void GetScore_Return10ForWord_Int()
     {
       string test = "KK";
