@@ -4,14 +4,18 @@ using System.Collections.Generic;
 namespace ScrabbleScore.Models
 {
   public class WordScore
-    {
+  {
 
-      public string Word { get; set; }
-      
-      public WordScore(string word)
-      {
-        Word = word;
-      }
-      
+    public string Word { get; set; }
+
+    public WordScore(string word)
+    {
+      Word = word;
     }
+
+    public int GetScore()
+    {
+      // return 1;
+    }
+  }
 }

@@ -33,5 +33,14 @@ namespace ScrabbleScore.Tests
       string result = newWordScore.Word;
       Assert.AreEqual(updatedTest, result);
     }
+
+    [TestMethod]
+    public void GetScore_ReturnInt_Int()
+    {
+      string test = "test";
+      WordScore newWordScore = new WordScore(test);
+      int result = newWordScore.GetScore();
+      Assert.AreEqual(1, result);
+    }
   }
 }
