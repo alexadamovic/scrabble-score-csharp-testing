@@ -36,6 +36,7 @@ namespace ScrabbleScore.Models
         {
           counter += 4;
         }
+        else 
         else
         {
           counter += 0;

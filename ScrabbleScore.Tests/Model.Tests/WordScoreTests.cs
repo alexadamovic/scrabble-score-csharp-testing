@@ -88,6 +88,15 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(4, result);
     }
 
+  [TestMethod]
+    public void GetScore_Return5For1Letter_Int()
+    {
+      string test = "K";
+      WordScore newWordScore = new WordScore(test);
+      int result = newWordScore.GetScore();
+      Assert.AreEqual(5, result);
+    }
+
 
   }
 }
