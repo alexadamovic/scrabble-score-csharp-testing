@@ -20,7 +20,18 @@ namespace ScrabbleScore.Tests
       string test = "test";
       WordScore newWordScore = new WordScore(test);
       string result = newWordScore.Word;
-      Assert.AreEqual(test,result);
+      Assert.AreEqual(test, result);
+    }
+
+    [TestMethod]
+    public void WordScoreConstructor_SetWordScore_String()
+    {
+      string test = "test";
+      WordScore newWordScore = new WordScore(test);
+      string updatedTest = "test2";
+      newWordScore.Word = updatedTest;
+      string result = newWordScore.Word;
+      Assert.AreEqual(updatedTest, result);
     }
   }
 }
