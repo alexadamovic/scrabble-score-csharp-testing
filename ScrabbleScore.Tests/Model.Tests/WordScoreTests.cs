@@ -42,5 +42,14 @@ namespace ScrabbleScore.Tests
       int result = newWordScore.GetScore();
       Assert.AreEqual(1, result);
     }
+
+    [TestMethod]
+    public void GetScore_Return0ForNotLetter_Int()
+    {
+      string test = "1";
+      WordScore newWordScore = new WordScore(test);
+      int result = newWordScore.GetScore();
+      Assert.AreEqual(0, result);
+    }
   }
 }
