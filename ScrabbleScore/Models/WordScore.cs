@@ -20,10 +20,11 @@ namespace ScrabbleScore.Models
       foreach (char letter in wordArray)
       {
         System.Console.WriteLine(letter);
-        if (letter == 'A')
+        if (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U' || letter == 'R' || letter == 'S' || letter == 'L' || letter == 'N' || letter == 'T')
         {
           counter += 1;
         }
+        else if ()
         else
         {
           counter += 0;

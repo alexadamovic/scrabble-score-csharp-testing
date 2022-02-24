@@ -60,5 +60,16 @@ namespace ScrabbleScore.Tests
       int result = newWordScore.GetScore();
       Assert.AreEqual(2, result);
     }
+
+    [TestMethod]
+
+    public void GetScore_Return2For1Letter_Int()
+    {
+      string test = "D";
+      WordScore newWordScore = new WordScore(test);
+      int result = newWordScore.GetScore();
+      Assert.AreEqual(2, result);
+    }
+
   }
 }
