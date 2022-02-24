@@ -106,6 +106,16 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(8, result);
     }
 
+  [TestMethod]
+    public void GetScore_Return10For1Letter_Int()
+    {
+      string test = "Q";
+      WordScore newWordScore = new WordScore(test);
+      int result = newWordScore.GetScore();
+      Assert.AreEqual(10, result);
+    }
+
+
 
   }
 }
