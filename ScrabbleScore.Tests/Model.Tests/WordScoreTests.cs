@@ -51,5 +51,14 @@ namespace ScrabbleScore.Tests
       int result = newWordScore.GetScore();
       Assert.AreEqual(0, result);
     }
+
+    [TestMethod]
+    public void GetScore_Return2ForTwoLetters_Int()
+    {
+      string test = "AA";
+      WordScore newWordScore = new WordScore(test);
+      int result = newWordScore.GetScore();
+      Assert.AreEqual(2, result);
+    }
   }
 }
