@@ -79,5 +79,15 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(3, result);
     }
 
+    [TestMethod]
+    public void GetScore_Return4For1Letter_Int()
+    {
+      string test = "F";
+      WordScore newWordScore = new WordScore(test);
+      int result = newWordScore.GetScore();
+      Assert.AreEqual(4, result);
+    }
+
+
   }
 }
