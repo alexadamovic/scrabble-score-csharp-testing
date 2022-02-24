@@ -32,6 +32,10 @@ namespace ScrabbleScore.Models
         {
           counter += 3;
         }
+        else if (letter == 'F' || letter == 'H' || letter == 'V' || letter == 'W' || letter == 'Y')
+        {
+          counter += 4;
+        }
         else
         {
           counter += 0;
