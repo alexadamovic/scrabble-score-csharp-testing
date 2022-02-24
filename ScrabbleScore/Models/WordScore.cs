@@ -36,7 +36,10 @@ namespace ScrabbleScore.Models
         {
           counter += 4;
         }
-        else 
+        else if (letter == 'K')
+        {
+          counter += 5;
+        }
         else
         {
           counter += 0;
