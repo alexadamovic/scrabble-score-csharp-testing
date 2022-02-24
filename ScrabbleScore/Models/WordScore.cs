@@ -6,7 +6,7 @@ namespace ScrabbleScore.Models
   public class WordScore
     {
 
-      public string Word { get; }
+      public string Word { get; set; }
       
       public WordScore(string word)
       {
