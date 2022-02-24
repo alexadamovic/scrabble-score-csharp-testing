@@ -24,7 +24,10 @@ namespace ScrabbleScore.Models
         {
           counter += 1;
         }
-        else if ()
+        else if (letter == 'D' || letter == 'G')
+        {
+          counter += 2;
+        }
         else
         {
           counter += 0;
